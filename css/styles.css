@@ -1,0 +1,42 @@
+.list-group-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-group-item .form-control {
+    margin-right: 40px;
+}
+.task-btns {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: nowrap;
+}
+.task-btns .btn {
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+.task-title {
+    white-space: nowrap;
+    flex: 1 1 auto;
+    margin-left: 15px;
+}
+
+.task-title__complete {
+    text-decoration: line-through !important;
+    opacity: 0.9;
+} 
+
+@media (max-width: 500px) {
+    .list-group-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .list-group-item input {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+}
